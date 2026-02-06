@@ -1,0 +1,13 @@
+{
+  "enabled": true,
+  "name": "Generate Project Documentation",
+  "description": "Analyzes the Locana project codebase and generates updated requirements.md and design.md files with comprehensive project documentation",
+  "version": "1",
+  "when": {
+    "type": "userTriggered"
+  },
+  "then": {
+    "type": "askAgent",
+    "prompt": "Analyze the current Locana project structure and codebase. Based on the existing components, API routes, database schema, and features, create two comprehensive documentation files:\n\n1. **requirements.md** - Updated functional and technical requirements based on the actual implemented features\n2. **design.md** - Detailed system design document including:\n   - Architecture overview\n   - Component hierarchy and relationships\n   - Database schema and relationships\n   - API design and endpoints\n   - UI/UX design patterns\n   - Technology stack details\n   - Data flow diagrams\n   - Security considerations\n\nExamine all the components, API routes, database scripts, and existing features to ensure the documentation accurately reflects the current state of the project. Include specific details about the voice chat, AI stock updates, image analysis, location services, and other implemented features."
+  }
+}
